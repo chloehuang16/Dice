@@ -4,10 +4,14 @@ void setup(){
 }
   void draw(){
    background(0);
-   Die bob = new Die(200,200);
-   bob.roll();
-   bob.show();
+   for (int y = 0; y<500; y++){
+     for(int x = 0; x<500; x++){
+       Die bob = new Die(x,y);
+       bob.show();
+       bob.roll();
+     }
    }
+  }
   void mousePressed(){
     redraw();
   }
