@@ -2,19 +2,19 @@ void setup(){
   size(500,500);
   noLoop();
 }
-  void draw(){
-   background(0);
-   for (int y = 0; y<500; y++){
-     for(int x = 0; x<500; x++){
-       Die bob = new Die(x,y);
-       bob.show();
-       bob.roll();
-     }
-   }
+void draw(){
+  background(0);
+  for (int y = 0; y<5; y++){
+    for(int x = 0; x<5; x++){
+      Die bob = new Die(x*100,y*100);
+      bob.show();
+      bob.roll();
+    }
   }
-  void mousePressed(){
-    redraw();
-  }
+}
+void mousePressed(){
+  redraw();
+}
 class Die {
   int rolled;
   int myX, myY;
