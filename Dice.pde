@@ -35,7 +35,7 @@ class Die {
     }
     else if (rolled == 2){
       ellipse(myX+25, myY +75, 20,20);
-      ellipse(myX +75, myY +25 20,20);
+      ellipse(myX +75, myY +25, 20,20);
     }
     else if (rolled == 3){
       ellipse(myX + 25, myY +75, 20,20);
