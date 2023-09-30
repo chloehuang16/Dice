@@ -31,14 +31,14 @@ class Die {
     rect(myX, myY, 100, 100);
     fill(255,0,0);
     if (rolled == 1){
-      ellipse(myX + 100,myY + 100,20,20);
+      ellipse(myX + 50,myY + 50,20,20);
     }
     else if (rolled == 2){
-      ellipse(myX + 100, myY +100, 20,20);
-      ellipse(myX +100, myY +100, 20,20);
+      ellipse(myX+25, myY +75, 20,20);
+      ellipse(myX +75, myY +25 20,20);
     }
     else if (rolled == 3){
-      ellipse(myX + 100, myY +100, 20,20);
+      ellipse(myX + 2, myY +100, 20,20);
       ellipse(myX + 100, myY +100, 20,20);
       ellipse(myX + 100, myY +100, 20,20);
     }
